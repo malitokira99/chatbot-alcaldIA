@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="chat-icon" onclick="toggleChat()">💬</div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <span>alcal-IA</span>
+            <span class="close-chat" style="cursor: pointer;" onclick="toggleChat()">✖</span>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
